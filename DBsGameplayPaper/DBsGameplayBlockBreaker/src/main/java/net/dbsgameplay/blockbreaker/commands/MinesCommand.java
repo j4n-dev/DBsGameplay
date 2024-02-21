@@ -11,7 +11,7 @@ public class MinesCommand implements CommandExecutor {
     if (!(sender instanceof Player))
       return false; 
     Player player = (Player)sender;
-    new MineGUI(player);
+    MineGUI.openFirstPage(player);
     return false;
   }
 }
